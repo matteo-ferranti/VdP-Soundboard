@@ -1,0 +1,29 @@
+# Android Studio
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+**/build/
+
+# Build outputs
+**/release/
+
+# Local configuration
+local.properties
+
+# Signing keys
+*.jks
+*.keystore
+
+# APK / App Bundles
+*.apk
+*.aab
+
+# Audio assets - kept private / not redistributed
+*.wav
+*.ogg
+*.mp3
+*.m4a
+*.aac
+*.flac
