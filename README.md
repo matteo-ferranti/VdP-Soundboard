@@ -8,11 +8,29 @@ The app provides a categorized collection of sound effects that can be played in
 
 - Custom soundboard interface
 - Instant audio playback
+- Sound search by title and custom tags
+- Quick search clearing
+- Scrollable search results
+- Persistent back navigation on sound category pages
 - Custom launcher icon
 - Audio sharing through Android intents
 - WhatsApp integration
 - Audio conversion and optimization for mobile playback
 - Android App Bundle / APK build support
+
+  ## Version 2.0.0
+
+Version 2.0.0 introduces a search system for the soundboard.
+
+Sounds can be searched by title or through manually assigned search tags, allowing related sounds to be found even when their displayed titles do not directly match the search term.
+
+The update also adds quick search clearing, scrollable search results, and persistent back navigation on sound category pages.
+
+<p align="center">
+  <img src="./docs/vdpsoundboard_newhome.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_search.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_persistentback.jpeg" height="650">
+</p>
 
 ## Tech Stack
 
@@ -52,6 +70,8 @@ app/
 3. Allow Gradle to synchronize.
 4. Build and run the application on an Android device or emulator.
 
+The repository does not include the original audio files. Visual assets that may contain third-party copyrighted material have been replaced with placeholders, except for the application logo.
+
 ## Audio Assets
 
 Audio assets and some visual assets are intentionally not included in this repository.
@@ -76,6 +96,8 @@ This project was developed as a personal Android development project to experime
 - Intent-based communication between applications
 - WhatsApp audio sharing
 - Android application packaging and signing
+- Search and filtering of sound assets
+- Search metadata and tagging
 
 ## Development Highlights
 
