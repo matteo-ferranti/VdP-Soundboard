@@ -52,6 +52,8 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.material3.OutlinedTextField
 import kotlin.collections.listOf
 import androidx.compose.material3.IconButton
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.offset
 
 
 class MainActivity : ComponentActivity() {
@@ -1544,7 +1546,7 @@ val italianSounds = listOf(
         title = "È finito il tempo delle Mele",
         imageRes = R.drawable.vdp_razdegan,
         audioRes = R.raw.tempomele,
-        searchTags = listOf("raz degan", "yotobi", "albiakiara", "puttana")
+        searchTags = listOf("raz degan", "yotobi", "albakiara", "puttana")
 
     )
 
@@ -1718,12 +1720,36 @@ fun HomePage(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(55.dp),
+
+            textStyle = TextStyle(
+                color = Color.Black,
+                fontFamily = soundFontFamily,
+                fontSize = 17.sp
+            ),
+
             placeholder = {
-                Text(
-                    text = "Cerca un suono...",
-                    fontFamily = soundFontFamily,
-                    fontSize = 17.sp
-                )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = "⌕",
+                        fontSize = 22.sp,
+                        color = Color.Gray,
+                        modifier = Modifier.offset(y = (-3).dp)
+                    )
+
+                    Spacer(
+                        modifier = Modifier.width(6.dp)
+                    )
+
+                    Text(
+                        text = "Cerca un suono...",
+                        fontFamily = soundFontFamily,
+                        fontSize = 17.sp,
+                        color = Color.Gray
+                    )
+                }
             },
             trailingIcon = {
                 if (searchQuery.isNotEmpty()) {
@@ -1819,7 +1845,7 @@ fun HomePage(
 
 
         Text(
-            text = "v 2.0.0 | Made by the Messere",
+            text = "v 2.0.1 | Made by the Messere",
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center,
             color = Color.Black,
