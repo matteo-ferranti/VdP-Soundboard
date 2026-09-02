@@ -32,6 +32,17 @@ The update also adds quick search clearing, scrollable search results, and persi
   <img src="./docs/vdpsoundboard_persistentback.jpeg" height="650">
 </p>
 
+### Version 2.0.1
+
+- Fixed audio sharing for a problematic sound file
+- Corrected a search tag typo
+- Improved search bar readability
+
+<p align="center">
+  <img src="./docs/vdpsoundboard_searchicon.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_searchnew.jpeg" height="650">
+</p>
+
 ## Tech Stack
 
 - Kotlin
