@@ -43,6 +43,16 @@ The update also adds quick search clearing, scrollable search results, and persi
   <img src="./docs/vdpsoundboard_searchnew.jpeg" height="650">
 </p>
 
+### Version 2.1.0
+
+Version 2.1.0 introduces a new collection of sounds and updates the existing audio assets.
+
+- Added new sounds and updated sound categories
+- Standardized the existing OGG audio files for improved compatibility
+- Converted audio assets to Opus OGG format at 48 kHz / 64 kbps
+- Removed unnecessary metadata and non-audio streams from the OGG files
+- Improved compatibility with mobile audio sharing
+
 ## Tech Stack
 
 - Kotlin
