@@ -56,9 +56,12 @@ app/
 ## Screenshots
 
 <p align="center">
-  <img src="./docs/vdpsoundboard_main.jpeg" height="650">
-  <img src="./docs/vdpsoundboard_page.jpeg" height="650">
-  <img src="./docs/vdpsoundboard_share.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_favoriteshome.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_favoritesempty.jpeg" height="650">
+</p>
+<p align="center">
+  <img src="./docs/vdpsoundboard_favoriteslist.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_favoritesfull.jpeg" height="650">
 </p>
 
 ## Building the Project
