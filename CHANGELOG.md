@@ -59,3 +59,9 @@ The update also adds quick search clearing, scrollable search results, and persi
 - Instant audio playback
 - Audio sharing through Android intents
 - Custom launcher icon
+
+<p align="center">
+  <img src="./docs/vdpsoundboard_main.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_page.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_share.jpeg" height="650">
+</p>
