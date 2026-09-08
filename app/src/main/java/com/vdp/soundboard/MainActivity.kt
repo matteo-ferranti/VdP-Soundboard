@@ -54,6 +54,7 @@ import kotlin.collections.listOf
 import androidx.compose.material3.IconButton
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.offset
+import androidx.compose.ui.text.font.FontStyle
 
 
 class MainActivity : ComponentActivity() {
@@ -62,6 +63,16 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         enableEdgeToEdge()
+
+        val prefs = getSharedPreferences("favorites", MODE_PRIVATE)
+
+        val savedFavorites = prefs
+            .getStringSet("favorite_audio_res", emptySet())
+            ?.mapNotNull { it.toIntOrNull() }
+            ?.toSet()
+            ?: emptySet()
+
+        favoriteAudioRes = savedFavorites
 
         setContent {
             VdPSoundboardTheme {
@@ -84,7 +95,9 @@ class MainActivity : ComponentActivity() {
                         },
                         onClassicMemeClick = {
                             currentPage = "classicmeme"
-                        }
+                        },
+                        onFavoritesClick = {
+                            currentPage = "favorites" }
                     )
 
                     "allstars" -> AllStarsPage(
@@ -106,6 +119,12 @@ class MainActivity : ComponentActivity() {
                     )
 
                     "classicmeme" -> ClassicMemePage(
+                        onBackClick = {
+                            currentPage = "home"
+                        }
+                    )
+
+                    "favorites" -> FavoritesPage(
                         onBackClick = {
                             currentPage = "home"
                         }
@@ -142,6 +161,8 @@ data class SoundItem(
     val audioExtension: String = "mp3",
     val searchTags: List<String> = emptyList()
 )
+
+var favoriteAudioRes by mutableStateOf(setOf<Int>())
 
 val allStarsSounds = listOf(
 
@@ -604,7 +625,6 @@ val warcraftSounds = listOf(
         audioRes = R.raw.frostmourne,
         searchTags = listOf("arthas menethil", "lich king", "world of warcraft", "wow")
 
-
     ),
 
     SoundItem(
@@ -612,7 +632,6 @@ val warcraftSounds = listOf(
         imageRes = R.drawable.vdp_deathwing,
         audioRes = R.raw.cataclysm,
         searchTags = listOf("deathwing", "neltharion", "world of warcraft", "wow")
-
 
     ),
 
@@ -622,6 +641,13 @@ val warcraftSounds = listOf(
         audioRes = R.raw.timeismoney,
         searchTags = listOf("goblin", "world of warcraft", "wow")
 
+    ),
+
+    SoundItem(
+        title = "Work Work",
+        imageRes = R.drawable.vdp_peone,
+        audioRes = R.raw.work,
+        searchTags = listOf("peone", "world of warcraft", "wow", "warcraft 3", "wc3")
 
     )
 
@@ -1250,10 +1276,34 @@ val movieSounds = listOf(
     ),
 
     SoundItem(
+        title = "Little Patience for Stupidity",
+        imageRes = R.drawable.vdp_kevinmalone,
+        audioRes = R.raw.stupidity,
+        searchTags = listOf("kevin malone", "the office")
+
+    ),
+
+    SoundItem(
+        title = "I am dead inside",
+        imageRes = R.drawable.vdp_scott,
+        audioRes = R.raw.deadinside,
+        searchTags = listOf("michael scott", "steve carell", "the office")
+
+    ),
+
+    SoundItem(
         title = "Effect on Women",
         imageRes = R.drawable.vdp_idris,
         audioRes = R.raw.effectonwomen,
         searchTags = listOf("idris elba", "charles miner", "the office")
+
+    ),
+
+    SoundItem(
+        title = "You Gay Bastard",
+        imageRes = R.drawable.vdp_jobennett,
+        audioRes = R.raw.gaybastard,
+        searchTags = listOf("jo bennett", "kathy bates", "the office")
 
     ),
 
@@ -1342,6 +1392,14 @@ val movieSounds = listOf(
         imageRes = R.drawable.vdp_aggfelice,
         audioRes = R.raw.raderealsuolo,
         searchTags = listOf("aldo giovanni e giacomo", "agg", "chiedimi se sono felice")
+
+    ),
+
+    SoundItem(
+        title = "Si sta ribaltando la situazione",
+        imageRes = R.drawable.vdp_agganplagghed,
+        audioRes = R.raw.situazione,
+        searchTags = listOf("aldo giovanni e giacomo", "agg", "anplagghed")
 
     ),
 
@@ -1763,6 +1821,38 @@ val italianSounds = listOf(
         audioRes = R.raw.hopagato,
         searchTags = listOf("penitente")
 
+    ),
+
+    SoundItem(
+        title = "Se ni' mondo esistesse un po' di bene",
+        imageRes = R.drawable.vdp_pacciani,
+        audioRes = R.raw.pacciani,
+        searchTags = listOf("pietro pacciani", "mostro di firenze", "fratello")
+
+    ),
+
+    SoundItem(
+        title = "Sattoh",
+        imageRes = R.drawable.vdp_paniccia,
+        audioRes = R.raw.sattoh,
+        searchTags = listOf("osvaldo paniccia", "esatto")
+
+    ),
+
+    SoundItem(
+        title = "Una cosa seria",
+        imageRes = R.drawable.vdp_paniccia,
+        audioRes = R.raw.unacosaseria,
+        searchTags = listOf("osvaldo paniccia", "l'arte è una cosa seria", "molto seria", "sotto gamba")
+
+    ),
+
+    SoundItem(
+        title = "DIOOOO",
+        imageRes = R.drawable.vdp_farenz,
+        audioRes = R.raw.dio,
+        searchTags = listOf("l'angolo di farenz")
+
     )
 
 )
@@ -1889,7 +1979,8 @@ fun HomePage(
     onAllStarsClick: () -> Unit,
     onVideoGamesClick: () -> Unit,
     onMovieStarsClick: () -> Unit,
-    onClassicMemeClick: () -> Unit
+    onClassicMemeClick: () -> Unit,
+    onFavoritesClick: () -> Unit
 ) {
 
     var searchQuery by remember { mutableStateOf("") }
@@ -2049,6 +2140,17 @@ fun HomePage(
                     onClick = onClassicMemeClick
                 )
 
+                Spacer(
+                    modifier = Modifier.height(10.dp)
+                )
+
+                // PULSANTE 5
+                CategoryButton(
+                    imageRes = R.drawable.vdp_favorites,
+                    text = "PREFERITI",
+                    onClick = onFavoritesClick
+                )
+
             } else {
 
                 searchResults.forEach { sound ->
@@ -2057,7 +2159,7 @@ fun HomePage(
                         imageRes = sound.imageRes,
                         title = sound.title,
                         audioRes = sound.audioRes,
-                        audioExtension = sound.audioExtension
+                        audioExtension = sound.audioExtension,
                     )
 
                     Spacer(
@@ -2070,7 +2172,7 @@ fun HomePage(
 
 
         Text(
-            text = "v 2.1.0 | Made by the Messere",
+            text = "v 3.0.0 | Made by the Messere",
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center,
             color = Color.Black,
@@ -2451,6 +2553,67 @@ fun ClassicMemePage(
 }
 
 
+@Composable
+fun FavoritesPage(
+    onBackClick: () -> Unit
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFFC1FF72))
+            .statusBarsPadding()
+            .verticalScroll(rememberScrollState())
+            .padding(16.dp)
+    ) {
+        TextButton(onClick = onBackClick) {
+            Text(
+                text = "← INDIETRO",
+                fontFamily = bungeeFontFamily,
+                fontSize = 18.sp,
+                color = Color.Black
+            )
+        }
+
+        Spacer(
+            modifier = Modifier.height(30.dp)
+        )
+
+        if (favoriteAudioRes.isEmpty()) {
+
+            Text(
+                text = "Nessun Preferito",
+                fontFamily = soundFontFamily,
+                fontSize = 22.sp,
+                fontStyle = FontStyle.Italic,
+                color = Color.Black,
+                modifier = Modifier.fillMaxWidth(),
+                textAlign = TextAlign.Center
+            )
+
+        } else {
+
+            allSounds
+                .filter { sound ->
+                    favoriteAudioRes.contains(sound.audioRes)
+                }
+                .forEach { sound ->
+
+                    SoundButton(
+                        imageRes = sound.imageRes,
+                        title = sound.title,
+                        audioRes = sound.audioRes,
+                        audioExtension = sound.audioExtension
+                    )
+
+                    Spacer(
+                        modifier = Modifier.height(12.dp)
+                    )
+                }
+        }
+    }
+}
+
+
 // --------------------------------------------------
 // PULSANTI DELLE CATEGORIE
 // --------------------------------------------------
@@ -2621,6 +2784,7 @@ fun SoundButton(
     audioExtension: String
 ) {
     val context = LocalContext.current
+    val isFavorite = favoriteAudioRes.contains(audioRes)
 
     Box(
         modifier = Modifier
@@ -2669,6 +2833,38 @@ fun SoundButton(
                 color = Color.Black,
                 textAlign = TextAlign.Center
             )
+
+            // PULSANTE PREFERITO
+            Box(
+                modifier = Modifier
+                    .width(30.dp)
+                    .height(60.dp)
+                    .align(Alignment.CenterEnd)
+                    .offset(x = (-35).dp, y = (-2).dp)
+                    .clickable {
+                        favoriteAudioRes = if (isFavorite) {
+                            favoriteAudioRes - audioRes
+                        } else {
+                            favoriteAudioRes + audioRes
+                        }
+
+                        context
+                            .getSharedPreferences("favorites", android.content.Context.MODE_PRIVATE)
+                            .edit()
+                            .putStringSet(
+                                "favorite_audio_res",
+                                favoriteAudioRes.map { it.toString() }.toSet()
+                            )
+                            .apply()
+                    },
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = if (isFavorite) "★" else "☆",
+                    fontSize = 20.sp,
+                    color = Color.Black
+                )
+            }
 
             // PULSANTE CONDIVIDI
             Box(
