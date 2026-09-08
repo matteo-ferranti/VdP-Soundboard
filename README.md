@@ -9,6 +9,7 @@ The app provides a categorized collection of sound effects that can be played in
 - Custom soundboard interface
 - Instant audio playback
 - Sound search by title and custom tags
+- Favorites with persistent storage
 - Quick search clearing
 - Scrollable search results
 - Persistent back navigation on sound category pages
@@ -20,11 +21,12 @@ The app provides a categorized collection of sound effects that can be played in
 
  ## Latest Version
 
-### Version 2.1.0
+### Version 3.0.0
 
-- Added new sounds and updated sound categories
-- Standardized OGG audio assets for improved compatibility
-- Improved mobile audio sharing compatibility
+- Added Favorites feature with persistent storage
+- Added star buttons to sounds
+- Added dedicated Favorites page
+- Added new sounds
 
 See [CHANGELOG.md](./CHANGELOG.md) for the complete version history.
 
