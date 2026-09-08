@@ -1,5 +1,22 @@
 # Changelog
 
+## Version 3.0.0
+
+- Added Favorites feature
+- Added persistent Favorites storage
+- Added star buttons to every sound
+- Added dedicated Favorites page
+- Added new sounds
+
+<p align="center">
+  <img src="./docs/vdpsoundboard_favoriteshome.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_favoritesempty.jpeg" height="650">
+</p>
+<p align="center">
+  <img src="./docs/vdpsoundboard_favoriteslist.jpeg" height="650">
+  <img src="./docs/vdpsoundboard_favoritesfull.jpeg" height="650">
+</p>
+
 ## Version 2.1.0
 
 Version 2.1.0 introduces a new collection of sounds and updates the existing audio assets.
