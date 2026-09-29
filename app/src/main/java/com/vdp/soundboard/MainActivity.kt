@@ -510,9 +510,10 @@ val allStarsSounds = listOf(
         title = "Porco...",
         imageRes = R.drawable.vdp_sabaku,
         audioRes = R.raw.sabaku,
-        searchTags = listOf("sabaku", "bestemmia")
+        searchTags = listOf("sabaku", "bestemmia", "dio")
 
     ),
+
 
     SoundItem(
         title = "AAAAAAAAAAH",
@@ -623,6 +624,14 @@ val warcraftSounds = listOf(
         title = "Frostmourne hungers",
         imageRes = R.drawable.vdp_lichking,
         audioRes = R.raw.frostmourne,
+        searchTags = listOf("arthas menethil", "lich king", "world of warcraft", "wow")
+
+    ),
+
+    SoundItem(
+        title = "Hail lo the King",
+        imageRes = R.drawable.vdp_lichking,
+        audioRes = R.raw.hailtotheking,
         searchTags = listOf("arthas menethil", "lich king", "world of warcraft", "wow")
 
     ),
@@ -1146,6 +1155,18 @@ val metalgearSounds = listOf(
 
 )
 
+val ageofempiresSounds = listOf(
+
+    SoundItem(
+        title = "Wololo",
+        imageRes = R.drawable.vdp_wololo,
+        audioRes = R.raw.wololo,
+        searchTags = listOf("age of empires", "aoe", "priest", "monk")
+
+    )
+
+)
+
 val animeSounds = listOf(
 
 
@@ -1232,6 +1253,14 @@ val movieSounds = listOf(
         imageRes = R.drawable.vdp_conan,
         audioRes = R.raw.malora,
         searchTags = listOf("conan il barbaro", "arnold schwarzenegger")
+
+    ),
+
+    SoundItem(
+        title = "Schiacciare i nemici...",
+        imageRes = R.drawable.vdp_conan,
+        audioRes = R.raw.schiacciarenemici,
+        searchTags = listOf("conan il barbaro", "arnold schwarzenegger", "inseguirli mentre fuggono", "ascoltare i lamenti delle femmine")
 
     ),
 
@@ -1356,6 +1385,14 @@ val movieSounds = listOf(
     ),
 
     SoundItem(
+        title = "Né scendere né salire",
+        imageRes = R.drawable.vdp_agggamba,
+        audioRes = R.raw.scenderesalire,
+        searchTags = listOf("aldo giovanni e giacomo", "agg", "tre uomini e una gamba")
+
+    ),
+
+    SoundItem(
         title = "Io ti tiro sotto",
         imageRes = R.drawable.vdp_aggcosmo,
         audioRes = R.raw.titirosotto,
@@ -1428,6 +1465,22 @@ val movieSounds = listOf(
     ),
 
     SoundItem(
+        title = "So it begins",
+        imageRes = R.drawable.vdp_theoden,
+        audioRes = R.raw.soitbegins,
+        searchTags = listOf("theoden", "il signore degli anelli", "lotr")
+
+    ),
+
+    SoundItem(
+        title = "VINO",
+        imageRes = R.drawable.vdp_baratheon,
+        audioRes = R.raw.vino,
+        searchTags = listOf("robert baratheon", "game of thrones", "got", "il trono di spade")
+
+    ),
+
+    SoundItem(
         title = "Surprise, motherfucker",
         imageRes = R.drawable.vdp_surprise,
         audioRes = R.raw.surprise,
@@ -1441,6 +1494,54 @@ val movieSounds = listOf(
         audioRes = R.raw.gradireimorire,
         searchTags = listOf("boris")
 
+    ),
+
+    SoundItem(
+        title = "We have to cook",
+        imageRes = R.drawable.vdp_walterwhite,
+        audioRes = R.raw.cook,
+        searchTags = listOf("walter white", "breaking bad", "jessie", "heisenberg")
+
+    ),
+
+    SoundItem(
+        title = "È una cagata pazzesca",
+        imageRes = R.drawable.vdp_fantozzi,
+        audioRes = R.raw.cagatapazzesca,
+        searchTags = listOf("fantozzi", "paolo villaggio", "corazzata potemkin")
+
+    ),
+
+    SoundItem(
+        title = "Com'è umano lei",
+        imageRes = R.drawable.vdp_fantozzi,
+        audioRes = R.raw.umano,
+        searchTags = listOf("fantozzi", "paolo villaggio")
+
+    ),
+
+    SoundItem(
+        title = "In che senso?",
+        imageRes = R.drawable.vdp_verdonebello,
+        audioRes = R.raw.nchesenso,
+        searchTags = listOf("carlo verdone", "un sacco bello")
+
+    ),
+
+    SoundItem(
+        title = "So' communista così!",
+        imageRes = R.drawable.vdp_bregabello,
+        audioRes = R.raw.communista,
+        searchTags = listOf("carlo verdone", "mario brega", "un sacco bello")
+
+    ),
+
+    SoundItem(
+        title = "Lo fanno, lo fanno",
+        imageRes = R.drawable.vdp_verdonebiancorosso,
+        audioRes = R.raw.lofanno,
+        searchTags = listOf("carlo verdone", "bianco rosso")
+
     )
 
 )
@@ -1452,6 +1553,14 @@ val italianSounds = listOf(
         imageRes = R.drawable.vdp_duemilioni,
         audioRes = R.raw.duemilioni,
         searchTags = listOf("alessandro orlando")
+
+    ),
+
+    SoundItem(
+        title = "Vuoi fare un business?",
+        imageRes = R.drawable.vdp_duemilioni,
+        audioRes = R.raw.facciamobusiness,
+        searchTags = listOf("alessandro orlando", "soldi", "società", "persona per bene")
 
     ),
 
@@ -1568,10 +1677,58 @@ val italianSounds = listOf(
     ),
 
     SoundItem(
+        title = "Mhanz",
+        imageRes = R.drawable.vdp_zeb,
+        audioRes = R.raw.mhanz,
+        searchTags = listOf("zeb89", "kenneth caselli")
+
+    ),
+
+    SoundItem(
+        title = "Uddio",
+        imageRes = R.drawable.vdp_zeb,
+        audioRes = R.raw.uddio,
+        searchTags = listOf("zeb89", "kenneth caselli", "oddio")
+
+    ),
+
+    SoundItem(
+        title = "Suino",
+        imageRes = R.drawable.vdp_zeb,
+        audioRes = R.raw.suino,
+        searchTags = listOf("zeb89", "kenneth caselli", "maiale", "porco")
+
+    ),
+
+    SoundItem(
+        title = "Madonna Ragazzi",
+        imageRes = R.drawable.vdp_zeb,
+        audioRes = R.raw.mazunna,
+        searchTags = listOf("zeb89", "kenneth caselli", "mazunna")
+
+    ),
+
+    SoundItem(
+        title = "Ma a me non me ne frega proprio un cazzo",
+        imageRes = R.drawable.vdp_zeb,
+        audioRes = R.raw.fregacasso,
+        searchTags = listOf("zeb89", "kenneth caselli")
+
+    ),
+
+    SoundItem(
         title = "Non ci sto",
         imageRes = R.drawable.vdp_cicciogamer,
         audioRes = R.raw.provvedimenti,
-        searchTags = listOf("cicciogamer89", "provvedimenti")
+        searchTags = listOf("cicciogamer89", "prenderò provvedimenti assolutamente")
+
+    ),
+
+    SoundItem(
+        title = "Ti devo dire",
+        imageRes = R.drawable.vdp_cicciogamer,
+        audioRes = R.raw.tidevodire,
+        searchTags = listOf("cicciogamer89")
 
     ),
 
@@ -1580,6 +1737,14 @@ val italianSounds = listOf(
         imageRes = R.drawable.vdp_sabaku,
         audioRes = R.raw.sabaku,
         searchTags = listOf("sabaku", "bestemmia")
+
+    ),
+
+    SoundItem(
+        title = "Welcome Back",
+        imageRes = R.drawable.vdp_sabaku,
+        audioRes = R.raw.welcomeback,
+        searchTags = listOf("sabaku", "benritrovati")
 
     ),
 
@@ -1728,6 +1893,22 @@ val italianSounds = listOf(
     ),
 
     SoundItem(
+        title = "La Guerra più totale",
+        imageRes = R.drawable.vdp_benson,
+        audioRes = R.raw.guerratotale,
+        searchTags = listOf("richard benson")
+
+    ),
+
+    SoundItem(
+        title = "Non mi sta bene",
+        imageRes = R.drawable.vdp_benson,
+        audioRes = R.raw.nonmistabene,
+        searchTags = listOf("richard benson")
+
+    ),
+
+    SoundItem(
         title = "Ho la...",
         imageRes = R.drawable.vdp_muniz,
         audioRes = R.raw.nelculo,
@@ -1787,6 +1968,14 @@ val italianSounds = listOf(
         title = "Shish",
         imageRes = R.drawable.vdp_renzi,
         audioRes = R.raw.shish,
+        searchTags = listOf("matteo renzi")
+
+    ),
+
+    SoundItem(
+        title = "It's the time of lunch",
+        imageRes = R.drawable.vdp_renzi,
+        audioRes = R.raw.timeoflunch,
         searchTags = listOf("matteo renzi")
 
     ),
@@ -1852,6 +2041,86 @@ val italianSounds = listOf(
         imageRes = R.drawable.vdp_farenz,
         audioRes = R.raw.dio,
         searchTags = listOf("l'angolo di farenz")
+
+    ),
+
+    SoundItem(
+        title = "Scossa? Va bene!",
+        imageRes = R.drawable.vdp_carloconti,
+        audioRes = R.raw.scossa,
+        searchTags = listOf("carlo conti", "l'eredità")
+
+    ),
+
+    SoundItem(
+        title = "Ma che oh!",
+        imageRes = R.drawable.vdp_mosconi,
+        audioRes = R.raw.macheoh,
+        searchTags = listOf("germano mosconi")
+
+    ),
+
+    SoundItem(
+        title = "Ah non lo so io",
+        imageRes = R.drawable.vdp_mosconi,
+        audioRes = R.raw.nonlosoio,
+        searchTags = listOf("germano mosconi")
+
+    ),
+
+    SoundItem(
+        title = "Ma chi è quel mona",
+        imageRes = R.drawable.vdp_mosconi,
+        audioRes = R.raw.mona,
+        searchTags = listOf("germano mosconi")
+
+    ),
+
+    SoundItem(
+        title = "Quetti bug",
+        imageRes = R.drawable.vdp_bug,
+        audioRes = R.raw.bug,
+        searchTags = listOf("minecraft", "herobrine", "questi bug")
+
+    ),
+
+    SoundItem(
+        title = "Et voilà, flambé",
+        imageRes = R.drawable.vdp_giorgione,
+        audioRes = R.raw.flambe,
+        searchTags = listOf("giorgione", "chef", "cuoco")
+
+    ),
+
+    SoundItem(
+        title = "Sono veramente euforico",
+        imageRes = R.drawable.vdp_euforico,
+        audioRes = R.raw.euforico,
+        searchTags = listOf("binary goal")
+
+    ),
+
+    SoundItem(
+        title = "Oddio, a drogarmi...",
+        imageRes = R.drawable.vdp_biggiogero,
+        audioRes = R.raw.drogarmi,
+        searchTags = listOf("alberto biggiogero", "avvocato")
+
+    ),
+
+    SoundItem(
+        title = "Cos'hai detto?",
+        imageRes = R.drawable.vdp_iacchetti,
+        audioRes = R.raw.coshaidetto,
+        searchTags = listOf("enzo iacchetti", "stronzo", "tiro un pugno")
+
+    ),
+
+    SoundItem(
+        title = "Mi iscrivo ai terroristi",
+        imageRes = R.drawable.vdp_magnotta,
+        audioRes = R.raw.terroristi,
+        searchTags = listOf("mario magnotta", "bomba")
 
     )
 
@@ -1960,6 +2229,7 @@ val allSounds = (
                 lolSounds +
                 teamfortressSounds +
                 starcraftSounds +
+                ageofempiresSounds +
                 metalgearSounds +
                 animeSounds +
                 movieSounds +
@@ -2172,7 +2442,7 @@ fun HomePage(
 
 
         Text(
-            text = "v 3.0.0 | Made by the Messere",
+            text = "v 3.1.0 | Made by the Messere",
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center,
             color = Color.Black,
@@ -2347,6 +2617,11 @@ fun VideoGamesPage(
             GameSection(
                 title = "METAL GEAR",
                 sounds = metalgearSounds
+            )
+
+            GameSection(
+                title = "AGE OF EMPIRES",
+                sounds = ageofempiresSounds
             )
         }
     }

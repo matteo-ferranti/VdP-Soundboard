@@ -13,8 +13,8 @@ android {
         applicationId = "com.vdp.soundboard"
         minSdk = 24
         targetSdk = 37
-        versionCode = 6
-        versionName = "3.0.0"
+        versionCode = 7
+        versionName = "3.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
