@@ -21,12 +21,10 @@ The app provides a categorized collection of sound effects that can be played in
 
  ## Latest Version
 
-### Version 3.0.0
+### Version 3.1.0
 
-- Added Favorites feature with persistent storage
-- Added star buttons to sounds
-- Added dedicated Favorites page
 - Added new sounds
+- Fixed a few search tags
 
 See [CHANGELOG.md](./CHANGELOG.md) for the complete version history.
 
