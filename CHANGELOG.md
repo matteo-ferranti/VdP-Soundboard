@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.1.0
+
+- Added new sounds
+- Fixed a few search tags
+
 ## Version 3.0.0
 
 - Added Favorites feature
