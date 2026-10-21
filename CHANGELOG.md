@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 3.2.0
+
+- Added new sounds
+
 ## Version 3.1.0
 
 - Added new sounds
