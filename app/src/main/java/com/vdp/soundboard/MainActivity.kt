@@ -719,6 +719,27 @@ val lolSounds = listOf(
         imageRes = R.drawable.vdp_thresh,
         audioRes = R.raw.folle,
         searchTags = listOf("thresh", "league of legends", "lol")
+    ),
+
+    SoundItem(
+        title = "Si sono arrabbiati",
+        imageRes = R.drawable.vdp_trundle,
+        audioRes = R.raw.sisonoarrabbiati,
+        searchTags = listOf("trundle", "league of legends", "lol")
+    ),
+
+    SoundItem(
+        title = "Albero abbattuto!",
+        imageRes = R.drawable.vdp_ivern,
+        audioRes = R.raw.alberoabbattuto,
+        searchTags = listOf("ivern", "league of legends", "lol")
+    ),
+
+    SoundItem(
+        title = "Tempesta, scatenati!",
+        imageRes = R.drawable.vdp_volibear,
+        audioRes = R.raw.tempesta,
+        searchTags = listOf("volibear", "league of legends", "lol")
     )
 
 )
@@ -1441,6 +1462,22 @@ val movieSounds = listOf(
     ),
 
     SoundItem(
+        title = "Sei nato torto e morirai testa di cazzo",
+        imageRes = R.drawable.vdp_agganplagghed,
+        audioRes = R.raw.natotorto,
+        searchTags = listOf("aldo giovanni e giacomo", "agg", "anplagghed")
+
+    ),
+
+    SoundItem(
+        title = "Bravo Sugar!",
+        imageRes = R.drawable.vdp_aggtelun,
+        audioRes = R.raw.bravosugar,
+        searchTags = listOf("aldo giovanni e giacomo", "agg", "tel chi el telun")
+
+    ),
+
+    SoundItem(
         title = "English, motherfucker",
         imageRes = R.drawable.vdp_pulp,
         audioRes = R.raw.englishmf,
@@ -1497,6 +1534,14 @@ val movieSounds = listOf(
     ),
 
     SoundItem(
+        title = "L'unico che sta facendo uno sforzo",
+        imageRes = R.drawable.vdp_marianogiusti,
+        audioRes = R.raw.evitarechetimeni,
+        searchTags = listOf("boris", "mariano giusti", "corrado guzzanti")
+
+    ),
+
+    SoundItem(
         title = "We have to cook",
         imageRes = R.drawable.vdp_walterwhite,
         audioRes = R.raw.cook,
@@ -1541,6 +1586,54 @@ val movieSounds = listOf(
         imageRes = R.drawable.vdp_verdonebiancorosso,
         audioRes = R.raw.lofanno,
         searchTags = listOf("carlo verdone", "bianco rosso")
+
+    ),
+
+    SoundItem(
+        title = "Of course I know him",
+        imageRes = R.drawable.vdp_obiwan,
+        audioRes = R.raw.iknowhim,
+        searchTags = listOf("star wars", "guerre stellari", "it's me", "obi wan kenobi")
+
+    ),
+
+    SoundItem(
+        title = "Mancanza di Fede",
+        imageRes = R.drawable.vdp_vader,
+        audioRes = R.raw.mancanzafede,
+        searchTags = listOf("star wars", "guerre stellari", "Trovo insopportabile", "darth vader", "dart fener")
+
+    ),
+
+    SoundItem(
+        title = "Fuck you and I'll see you tomorrow",
+        imageRes = R.drawable.vdp_larrydavid,
+        audioRes = R.raw.fucktomorrow,
+        searchTags = listOf("larry david", "curb your enthusiasm")
+
+    ),
+
+    SoundItem(
+        title = "No, I don't think I will",
+        imageRes = R.drawable.vdp_oldcap,
+        audioRes = R.raw.donthinkiwill,
+        searchTags = listOf("captain america", "avengers endgame")
+
+    ),
+
+    SoundItem(
+        title = "Sono stanco, Capo",
+        imageRes = R.drawable.vdp_johncoffey,
+        audioRes = R.raw.sonostanco,
+        searchTags = listOf("john coffey", "il miglio verde", "i'm tired boss", "michael clarke dunkan", "the green mile")
+
+    ),
+
+    SoundItem(
+        title = "Ci costerà 51 anni",
+        imageRes = R.drawable.vdp_interstellar,
+        audioRes = R.raw.cinquantunoanni,
+        searchTags = listOf("captain america", "avengers endgame")
 
     )
 
@@ -1600,6 +1693,22 @@ val italianSounds = listOf(
         title = "Comunisti",
         imageRes = R.drawable.vdp_berlusconi,
         audioRes = R.raw.comunisti,
+        searchTags = listOf("berlusconi", "cavaliere", "presidente")
+
+    ),
+
+    SoundItem(
+        title = "Cribbio",
+        imageRes = R.drawable.vdp_berlusconi,
+        audioRes = R.raw.cribbio,
+        searchTags = listOf("berlusconi", "cavaliere", "presidente")
+
+    ),
+
+    SoundItem(
+        title = "Mi consenta",
+        imageRes = R.drawable.vdp_berlusconi,
+        audioRes = R.raw.miconsenta,
         searchTags = listOf("berlusconi", "cavaliere", "presidente")
 
     ),
@@ -1712,6 +1821,14 @@ val italianSounds = listOf(
         title = "Ma a me non me ne frega proprio un cazzo",
         imageRes = R.drawable.vdp_zeb,
         audioRes = R.raw.fregacasso,
+        searchTags = listOf("zeb89", "kenneth caselli")
+
+    ),
+
+    SoundItem(
+        title = "Dov'è il bagno?",
+        imageRes = R.drawable.vdp_zeb,
+        audioRes = R.raw.bagno,
         searchTags = listOf("zeb89", "kenneth caselli")
 
     ),
@@ -1869,6 +1986,14 @@ val italianSounds = listOf(
     ),
 
     SoundItem(
+        title = "Tu il mio nome devi dimenticartelo",
+        imageRes = R.drawable.vdp_sgarbi,
+        audioRes = R.raw.ilmionome,
+        searchTags = listOf("vittorio sgarbi", "hai rotto il cazzo")
+
+    ),
+
+    SoundItem(
         title = "Questa volta no",
         imageRes = R.drawable.vdp_benson,
         audioRes = R.raw.stavoltano,
@@ -1904,6 +2029,14 @@ val italianSounds = listOf(
         title = "Non mi sta bene",
         imageRes = R.drawable.vdp_benson,
         audioRes = R.raw.nonmistabene,
+        searchTags = listOf("richard benson")
+
+    ),
+
+    SoundItem(
+        title = "Ti devi spaventare",
+        imageRes = R.drawable.vdp_benson,
+        audioRes = R.raw.spaventare,
         searchTags = listOf("richard benson")
 
     ),
@@ -1976,6 +2109,14 @@ val italianSounds = listOf(
         title = "It's the time of lunch",
         imageRes = R.drawable.vdp_renzi,
         audioRes = R.raw.timeoflunch,
+        searchTags = listOf("matteo renzi")
+
+    ),
+
+    SoundItem(
+        title = "A Genius",
+        imageRes = R.drawable.vdp_renzi,
+        audioRes = R.raw.genius,
         searchTags = listOf("matteo renzi")
 
     ),
@@ -2122,6 +2263,22 @@ val italianSounds = listOf(
         audioRes = R.raw.terroristi,
         searchTags = listOf("mario magnotta", "bomba")
 
+    ),
+
+    SoundItem(
+        title = "Negli occhi",
+        imageRes = R.drawable.vdp_marconero,
+        audioRes = R.raw.negliocchi,
+        searchTags = listOf("marco nero", "ti sborro")
+
+    ),
+
+    SoundItem(
+        title = "Ma io che cazzo ne so scusi?",
+        imageRes = R.drawable.vdp_macellaio,
+        audioRes = R.raw.checazzoneso,
+        searchTags = listOf("macellaio toscano")
+
     )
 
 )
@@ -2149,6 +2306,14 @@ val internationalSounds = listOf(
         imageRes = R.drawable.vdp_trump,
         audioRes = R.raw.billions,
         searchTags = listOf("donald trump")
+
+    ),
+
+    SoundItem(
+        title = "People who have no clue what they're doing",
+        imageRes = R.drawable.vdp_trump,
+        audioRes = R.raw.noclue,
+        searchTags = listOf("donald trump", "marxists", "anarchists", "agitators", "looters", "many instances", "absolutely")
 
     ),
 
@@ -2188,6 +2353,22 @@ val internationalSounds = listOf(
         imageRes = R.drawable.vdp_stevenhe,
         audioRes = R.raw.emotionaldamage,
         searchTags = listOf("steven he")
+
+    ),
+
+    SoundItem(
+        title = "Call an Ambulance",
+        imageRes = R.drawable.vdp_callambulance,
+        audioRes = R.raw.callanambulance,
+        searchTags = listOf("but not for me")
+
+    ),
+
+    SoundItem(
+        title = "I don't know Rick",
+        imageRes = R.drawable.vdp_falso,
+        audioRes = R.raw.idontknowrick,
+        searchTags = listOf("it looks fake", "non lo so rick, mi pare falso", "il banco dei pegni", "pawn stars", "affari di famiglia")
 
     )
 
@@ -2442,7 +2623,8 @@ fun HomePage(
 
 
         Text(
-            text = "v 3.1.0 | Made by the Messere",
+            text = "v 3.2" +
+                    ".0 | Made by the Messere",
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center,
             color = Color.Black,
